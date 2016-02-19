@@ -4,7 +4,8 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
+	  Mastermind mastermindparty = new Mastermind();//start new Mastermindparty.
+	  mastermindparty.start();
 
 	}
 
