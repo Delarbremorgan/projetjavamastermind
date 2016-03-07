@@ -17,5 +17,5 @@ public class Mastermind /** Mastermindparty class */
 		// TODO Auto-generated method stub
 		
 	}
-
+ 
 }
