@@ -1,11 +1,25 @@
-
-public class Main 
+ /**
+  * main class
+  * @author delarbrm
+  *
+  */
+public class Main
 {
-
-	public static void main(String[] args)
+	/**
+	 * constructor initialising party
+	 * @param args
+	 */
+	public static void main(String[] args) 
 	{
-	  Mastermind mastermindparty = new Mastermind();/**start new Mastermindparty.*/
-	  mastermindparty.start(); /** party start*/
+		/**
+		 * start new Mastermindparty
+		 */
+	  Mastermind mastermindparty = new Mastermind();
+	  /**
+	   *  party start
+	   */
+	  mastermindparty.start();
+	  //System.out.println();
 
 	}
 

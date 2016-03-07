@@ -1,18 +1,62 @@
-
-public class Mastermind /** Mastermindparty class */
+/**
+ *  Mastermindparty class and colors utilisation 
+ * @author delarbrm
+ *
+ */
+public class Mastermind extends Colors 
 {
-	public Mastermind()/**game can be start*/
+	/**
+	 * first ball of ia
+	 */
+	private int a; 
+	/**
+	 * second ball of ia
+	 */
+	private int b; 
+	/**
+	 * third ball of ia
+	 */
+	private int c;
+	/**
+	 * fourth ball of ia
+	 */
+	private int d; 
+	/**
+	 * player ready or not
+	 */
+	private boolean player; 
+	
+	/**
+	 * game can be start
+	 */
+	public Mastermind()
 	{
-	 Plate plateau = new plate();
-	 Ball b1 =new ball();   /** combinaison de l'ia*/
-	 Ball b2 =new ball();   /** combinaison de l'ia*/
-	 Ball b3 =new ball();   /** combinaison de l'ia*/
-	 Ball b4 =new ball();   /** combinaison de l'ia*/ 
-		
+		/**
+		 *  combinaison de l'ia
+		 */
+	   this.a=getrandomcolor();  
+	   /**
+		 *  combinaison de l'ia
+		 */
+       this.b=getrandomcolor(); 
+       /**
+		 *  combinaison de l'ia
+		 */
+       this.c=getrandomcolor();	
+       /**
+		 *  combinaison de l'ia
+		 */
+	   this.d=getrandomcolor();	
+	 /**
+	  * player ready
+	  */
+	   this.player=true; 
 	}
 	
-	
-	public void start() /** allow to start a game */
+	/**
+	 * allow to start a game 
+	 */
+	public void start() 
 	{
 		// TODO Auto-generated method stub
 		
