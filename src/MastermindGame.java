@@ -10,19 +10,19 @@ public class MastermindGame extends Colors
 	/**
 	 * first ball of ia
 	 */
-	private int a; 
+	private Namecolor a; 
 	/**
 	 * second ball of ia
 	 */
-	private int b; 
+	private Namecolor b; 
 	/**
 	 * third ball of ia
 	 */
-	private int c;
+	private Namecolor c;
 	/**
 	 * fourth ball of ia
 	 */
-	private int d; 
+	private Namecolor d; 
 	/**
 	 * player ready or not
 	 */
@@ -52,17 +52,25 @@ public class MastermindGame extends Colors
 	 /**
 	  * player ready
 	  */
-	   this.player=true; 
+	   this.player=true;
+
 	}
 	
 	// TODO rename method (ask for advice)
 	/**
-	 * allow to start a game 
+	 * allow to start a game
 	 */
-	public void start() 
+	public void play() 
 	{
 		// TODO Auto-generated method stub
-		
-	}
+	  
+		System.out.println(this.a);
+		System.out.println(this.b);
+		System.out.println(this.c);
+		System.out.println(this.d);
+		System.out.println(this.player);
+	  
+	  
+}
  
 }
