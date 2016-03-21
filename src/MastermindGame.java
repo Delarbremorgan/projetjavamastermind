@@ -1,74 +1,45 @@
-// TODO fix comment (ask for advice)
+// TODO(Done) fix comment (ask for advice)
 /**
  *  Mastermindparty class and colors utilisation 
  * @author delarbrm
  *
  */
-// TODO is inheritance relevant here? think about it
-public class MastermindGame extends Colors 
+// TODO(done) is inheritance relevant here? think about it
+public class MastermindGame  
 {
 	/**
-	 * first ball of ia
-	 */
-	private Namecolor a; 
-	/**
-	 * second ball of ia
-	 */
-	private Namecolor b; 
-	/**
-	 * third ball of ia
-	 */
-	private Namecolor c;
-	/**
-	 * fourth ball of ia
-	 */
-	private Namecolor d; 
-	/**
-	 * player ready or not
-	 */
-	private boolean player; 
-	
-	/**
-	 * game can be start
+	 * game can be started
+	 * (player is ready and ia combinaison is set)
 	 */
 	public MastermindGame()
 	{
 		/**
-		 *  combinaison de l'ia
+		 * CREATION D'UN OBJET COMBINAISON
+		 * @iaCombinaison name of combinaison
 		 */
-	   this.a=getrandomcolor();  
-	   /**
-		 *  combinaison de l'ia
-		 */
-       this.b=getrandomcolor(); 
-       /**
-		 *  combinaison de l'ia
-		 */
-       this.c=getrandomcolor();	
-       /**
-		 *  combinaison de l'ia
-		 */
-	   this.d=getrandomcolor();	
-	 /**
-	  * player ready
-	  */
-	   this.player=true;
-
+	Combinaison iaCombinaison= new Combinaison();//a modifier comme attribut
+	/**
+	 * creation d'un objet player
+	 * @Player1 name of player 
+	 */
+	 Player Player1= new Player(true);//a modifier en attribut
 	}
 	
-	// TODO rename method (ask for advice)
+	// TODO(Done) rename method (ask for advice)
 	/**
 	 * allow to start a game
 	 */
 	public void play() 
 	{
-		// TODO Auto-generated method stub
-	  
-		System.out.println(this.a);
-		System.out.println(this.b);
-		System.out.println(this.c);
-		System.out.println(this.d);
-		System.out.println(this.player);
+		
+		// TODO(done) Auto-generated method stub
+	  /**
+	   * test for see random combinaison
+	   */
+		System.out.println(Combinaison.geta());
+		System.out.println(Combinaison.getb());
+		System.out.println(Combinaison.getc());
+		System.out.println(Combinaison.getd());
 	  
 	  
 }

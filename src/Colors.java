@@ -15,37 +15,37 @@ public class Colors
 	/**
 	*color
 	*/
-	public int color; 
+	public static int color; 
 	/**
 	 * name of color
 	 */
-	public Namecolor name;
+	public static Namecolor name;
 
 	/**
 	 * generate color random
 	 * @return name of the color
 	 */
-	public Namecolor getrandomcolor()
+	public static Namecolor getrandomcolor()
 		{ 
 			/**
 			 * generate random color
 			 */
-			this.color=(int) ((mincolor)+(maxcolor-mincolor)*Math.random());
-			if(this.color==0){
-				this.name=Namecolor.BLUE; };
-			if(this.color==1){
-				this.name=Namecolor.RED; };
-			if(this.color==2){
-				this.name=Namecolor.YELLOW; };
-			if(this.color==3){
-				this.name=Namecolor.PINK; };
-			if(this.color==4){
-				this.name=Namecolor.GREEN; };
-			if(this.color==5){
-				this.name=Namecolor.ORANGE; };
-			if(this.color==6){
-				this.name=Namecolor.PURPLE; };
-				return this.name;
+			color=(int) ((mincolor)+(maxcolor-mincolor)*Math.random());
+			if(color==0){
+				name=Namecolor.BLUE; };
+			if(color==1){
+				name=Namecolor.RED; };
+			if(color==2){
+				name=Namecolor.YELLOW; };
+			if(color==3){
+				name=Namecolor.PINK; };
+			if(color==4){
+				name=Namecolor.GREEN; };
+			if(color==5){
+				name=Namecolor.ORANGE; };
+			if(color==6){
+				name=Namecolor.PURPLE; };
+				return name;
 		}
 	}
 

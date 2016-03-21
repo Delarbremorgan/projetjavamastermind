@@ -1,6 +1,6 @@
-// TODO update README.md (what/who)
+// TODO(done) update README.md (what/who)
 
-// TODO write comment
+// TODO(done) write comment
 /**
  * class main
  * @author delarbrm
@@ -8,7 +8,7 @@
  */
 public class Main 
 {
-	// TODO write comment
+	// TODO(done) write comment
 	/**
 	 * methodes main
 	 * @param args
