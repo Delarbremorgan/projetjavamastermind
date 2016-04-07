@@ -44,7 +44,7 @@ public class MastermindGame
 	 * play the game
 	 * 
 	 * 		while (<game is not over>)
-	 * 			<player choose a combinaison>
+	 * 			<ask player for combinaison>
 	 * 			<compute code comparison>
 	 * 			<show comparison to player>
 	*/
@@ -55,6 +55,5 @@ public class MastermindGame
 		 * creation of player combinaison
 		 */
 		//this.Jcombinaison = new Combinaison(Namecolor.BLUE, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
-		
-			}
+	}
 }
