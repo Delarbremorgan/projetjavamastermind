@@ -1,47 +1,60 @@
 // TODO(Done) fix comment (ask for advice)
 /**
- *  Mastermindparty class and colors utilisation 
+ * Mastermindparty class and colors utilisation
+ * 
  * @author delarbrm
  *
  */
 // TODO(done) is inheritance relevant here? think about it
-public class MastermindGame  
+public class MastermindGame
 {
 	/**
-	 * game can be started
-	 * (player is ready and ia combinaison is set)
+	 * creation iaCombinaison attribute
+	 */
+	private final Combinaison iaCombinaison;
+	/**
+	 * creation Player attribute
+	 * 
+	 **/
+	private final Player Player;
+	/**
+	 * creation Jcombinaison attribute
+	 * 
+	 **/
+	private Combinaison Jcombinaison;
+
+	/**
+	 * Create a new game, that can be played (player is ready and ia combinaison is set)
 	 */
 	public MastermindGame()
 	{
-		/**
+		/*
 		 * CREATION D'UN OBJET COMBINAISON
-		 * @iaCombinaison name of combinaison
 		 */
-	Combinaison iaCombinaison= new Combinaison();//a modifier comme attribut
-	/**
-	 * creation d'un objet player
-	 * @Player1 name of player 
-	 */
-	 Player Player1= new Player(true);//a modifier en attribut
+		this.iaCombinaison = new Combinaison();
+		/*
+		 * creation d'un objet player
+		 */
+		this.Player = new Player(true);
+
 	}
-	
+
 	// TODO(Done) rename method (ask for advice)
 	/**
-	 * allow to start a game
-	 */
-	public void play() 
+	 * play the game
+	 * 
+	 * 		while (<game is not over>)
+	 * 			<player choose a combinaison>
+	 * 			<compute code comparison>
+	 * 			<show comparison to player>
+	*/
+	public void play()
 	{
-		
 		// TODO(done) Auto-generated method stub
-	  /**
-	   * test for see random combinaison
-	   */
-		System.out.println(Combinaison.geta());
-		System.out.println(Combinaison.getb());
-		System.out.println(Combinaison.getc());
-		System.out.println(Combinaison.getd());
-	  
-	  
-}
- 
+		/*
+		 * creation of player combinaison
+		 */
+		//this.Jcombinaison = new Combinaison(Namecolor.BLUE, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
+		
+			}
 }

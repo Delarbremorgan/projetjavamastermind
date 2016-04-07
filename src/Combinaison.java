@@ -8,19 +8,35 @@ public class Combinaison
 	/**
 	 * first ball of ia
 	 */
-	private static Namecolor a; 
+	private Namecolor a; 
 	/**
 	 * second ball of ia
 	 */
-	private static Namecolor b; 
+	private Namecolor b; 
 	/**
 	 * third ball of ia
 	 */
-	private static Namecolor c;
+	private Namecolor c;
 	/**
 	 * fourth ball of ia
 	 */
-	private static Namecolor d; 
+	private Namecolor d; 
+	/**
+	 * first ball of player
+	 */
+	private Namecolor e; 
+	/**
+	 * second ball player
+	 */
+	private Namecolor f; 
+	/**
+	 * third ball of player
+	 */
+	private Namecolor g;
+	/**
+	 * fourth ball of player
+	 */
+	private Namecolor h; 
 	/**
 	 * create new combinaison
 	 */
@@ -43,31 +59,72 @@ public Combinaison() {
    this.d=Colors.getrandomcolor();	   
 }
 /**
- * allow to see attribut
- * @return attribut
+ * creation of new combinaison
+ * @param A first color
+ * @param B second
+ * @param C  third
+ * @param D fourth
  */
-public static Namecolor geta(){
-	return a;
+public Combinaison(Namecolor A,Namecolor B,Namecolor C,Namecolor D){
+	this.e=A;
+	this.f=B;
+	this.g=C;
+	this.h=D;
 }
 /**
  * allow to see attribut
  * @return attribut
  */
-public static Namecolor getb(){
-	return b;
+public Namecolor geta(){
+	return this.a;
 }
 /**
  * allow to see attribut
  * @return attribut
  */
-public static Namecolor getc(){
-	return c;
+public Namecolor getb(){
+	return this.b;
 }
 /**
  * allow to see attribut
  * @return attribut
  */
-public static Namecolor getd(){
-	return d;
+public Namecolor getc(){
+	return this.c;
+}
+/**
+ * allow to see attribut
+ * @return attribut
+ */
+public Namecolor getd(){
+	return this.d;
+}
+/**
+ * allow to see attribut
+ * @return attribut
+ */
+public Namecolor gete(){
+	return this.e;
+}
+/**
+ * allow to see attribut
+ * @return attribut
+ */
+public Namecolor getf(){
+	return this.f;
+}
+/**
+ * allow to see attribut
+ * @return attribut
+ */
+public Namecolor getg(){
+	return this.g;
+}
+/**
+ * allow to see attribut
+ * @return attribut
+ */
+public Namecolor geth(){
+	return this.h;
 }
 }

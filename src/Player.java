@@ -31,6 +31,13 @@ public Player(boolean state){
 public boolean Playerready(){
 	return this.state=true;
 }
+/**
+ * allow to see state of player
+ * @return state
+ */
+public boolean getstate(){
+	return this.state;
+}
 
 
 
