@@ -8,35 +8,35 @@ public class Combinaison
 	/**
 	 * first ball of ia
 	 */
-	private Namecolor a; 
+	public Namecolor a; 
 	/**
 	 * second ball of ia
 	 */
-	private Namecolor b; 
+	public Namecolor b; 
 	/**
 	 * third ball of ia
 	 */
-	private Namecolor c;
+	public Namecolor c;
 	/**
 	 * fourth ball of ia
 	 */
-	private Namecolor d; 
+	public Namecolor d; 
 	/**
 	 * first ball of player
 	 */
-	private Namecolor e; 
+	public Namecolor e; 
 	/**
 	 * second ball player
 	 */
-	private Namecolor f; 
+	public Namecolor f; 
 	/**
 	 * third ball of player
 	 */
-	private Namecolor g;
+	public Namecolor g;
 	/**
 	 * fourth ball of player
 	 */
-	private Namecolor h; 
+	public Namecolor h; 
 	/**
 	 * create new combinaison
 	 */
