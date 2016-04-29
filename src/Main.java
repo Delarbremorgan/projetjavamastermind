@@ -10,7 +10,7 @@ public class Main
 {
 	// TODO(done) write comment
 	/**
-	 * methodes main
+	 * Method main
 	 * @param args
 	 */
 	public static void main(String[] args)
