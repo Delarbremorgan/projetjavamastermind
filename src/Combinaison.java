@@ -127,4 +127,21 @@ public Namecolor getg(){
 public Namecolor geth(){
 	return this.h;
 }
+/**
+ * 
+ * @param Un
+ * @param Deux
+ * @return boolean
+ */
+	public boolean docomp(Combinaison Un,Combinaison Deux){
+	
+	if(Un.e==Deux.e  && Un.f==Deux.f && Un.g==Deux.g && Un.h==Deux.h){
+	 return false;
+	}
+	else{
+	 return true;
+	}
+	// TODO Auto-generated method stub
+	
+}
 }

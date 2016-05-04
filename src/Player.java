@@ -1,3 +1,4 @@
+/*import java.util.Scanner;*/
 /**
  * player class
  * @author delarbrm
@@ -27,7 +28,7 @@ public Player(){
  */
 public Player(boolean state){
 	this.state=state;
-	this.Jcombinaison = new Combinaison(Namecolor.BLUE, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
+	this.Jcombinaison = new Combinaison(Namecolor.RED, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
 }
 	/***
 	 * change player state to ready
@@ -48,8 +49,9 @@ public boolean getstate(){
  * @return combinaison player
  */
 public Combinaison getcombi()
-{
-	
+{  
+	/*Scanner sc = new Scanner(System.in);*/
+	this.Jcombinaison = new Combinaison(Namecolor.BLUE, Namecolor.RED , Namecolor.YELLOW, Namecolor.GREEN);
 	return this.Jcombinaison;
 	// TODO Auto-generated method stub
 	

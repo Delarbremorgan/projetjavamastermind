@@ -28,7 +28,7 @@ public class MastermindGame
 		/*
 		 * CREATION D'UN OBJET COMBINAISON
 		 */
-		this.iaCombinaison = new Combinaison(Namecolor.PINK, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
+		this.iaCombinaison = new Combinaison(Namecolor.RED,Namecolor.RED,Namecolor.YELLOW,Namecolor.GREEN);
 		/*
 		 * creation d'un objet player
 		 */
@@ -53,37 +53,21 @@ public class MastermindGame
 		 * creation of player combinaison
 		 */
 		//this.Jcombinaison = new Combinaison(Namecolor.BLUE, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
-	while(this.gameover()){
+	while(!this.gameover()){
 		  Combinaison combi = this.Player.getcombi();
 		  System.out.println(combi);
-		  docomp(combi,this.iaCombinaison);
-		  System.out.println(docomp(combi,this.iaCombinaison));
+		  boolean comp = docomp(combi,this.iaCombinaison);
+		  System.out.println(comp);
 		  this.nbtour=this.nbtour+1;
 		                  }	
 	}
-/**
- * Method docomp
- * @return boolean
- */
-	private boolean docomp(Combinaison Un,Combinaison Deux)
-	{
-		
-		if(Un==Deux){
-			return true;
-		}
-		else{
-		return false;		
-		}
-		// TODO Auto-generated method stub
-		
-	}
+
 /**
  * Method gameover
  * @return boolean 
  */
-	private boolean gameover()
-	{
-		if (this.docomp(this.Player.Jcombinaison,this.iaCombinaison)){
+	private boolean gameover(){
+		if (docomp(this.Player.Jcombinaison,this.iaCombinaison)){
 			System.out.println("bonne Combinaison");
 			return false;
 											}
