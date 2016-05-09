@@ -50,8 +50,8 @@ public boolean getstate(){
  */
 public Combinaison getcombi()
 {  
-	/*Scanner sc = new Scanner(System.in);*/
-	this.Jcombinaison = new Combinaison(Namecolor.BLUE, Namecolor.RED , Namecolor.YELLOW, Namecolor.GREEN);
+	this.Jcombinaison = new Jcombinaison();
+	System.out.println(this.Jcombinaison.a+" "+this.Jcombinaison.b+" "+this.Jcombinaison.c+" "+this.Jcombinaison.d);
 	return this.Jcombinaison;
 	// TODO Auto-generated method stub
 	

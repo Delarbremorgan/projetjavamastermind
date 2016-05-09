@@ -128,20 +128,54 @@ public Namecolor geth(){
 	return this.h;
 }
 /**
- * 
+ * do comparaison
  * @param Un
  * @param Deux
  * @return boolean
  */
-	public boolean docomp(Combinaison Un,Combinaison Deux){
+public static boolean docomp(Combinaison Un,Combinaison Deux){
 	
-	if(Un.e==Deux.e  && Un.f==Deux.f && Un.g==Deux.g && Un.h==Deux.h){
-	 return false;
+	if(Un.a==Deux.e  && Un.b==Deux.f && Un.c==Deux.g && Un.d==Deux.h){
+		System.out.println("4 pion blanc");
+	 return true;
 	}
 	else{
-	 return true;
+		int blanc = 0;
+		int noir = 0;
+		if(Un.a==Deux.e) blanc=blanc+1;
+		if(Un.a==Deux.f && Un.b==Deux.f ){}
+		else{if(Un.a==Deux.f)noir=noir+1;};
+		if(Un.a==Deux.g && Un.c==Deux.g){}
+		else{if(Un.a==Deux.g)noir=noir+1;};
+		if(Un.a==Deux.h && Un.d==Deux.h){} 
+		else{if(Un.a==Deux.h)noir=noir+1;};
+		if(Un.b==Deux.e && Un.a==Deux.e){}
+		else{if(Un.b==Deux.e)noir=noir+1;};
+		if(Un.b==Deux.f) blanc=blanc+1;
+		if(Un.b==Deux.g && Un.c==Deux.g){}
+		else{if(Un.b==Deux.g)noir=noir+1;};
+		if(Un.b==Deux.h && Un.d==Deux.h){}
+		else{if(Un.b==Deux.h)noir=noir+1;};
+		if(Un.c==Deux.e && Un.a==Deux.e){}
+		else {if(Un.c==Deux.e)noir=noir+1;};
+		if(Un.c==Deux.f && Un.b==Deux.f){}
+		else{if(Un.c==Deux.f)noir=noir+1;};
+		if(Un.c==Deux.g) blanc=blanc+1;
+		if(Un.c==Deux.h && Un.d==Deux.h){}
+		else{if(Un.c==Deux.h)noir=noir+1;};
+		if(Un.d==Deux.e && Un.a==Deux.e ){}
+		else{if(Un.d==Deux.e)noir=noir+1;};
+		if(Un.d==Deux.f && Un.b==Deux.f){}
+		else{if(Un.d==Deux.f)noir=noir+1;};
+		if(Un.d==Deux.g && Un.c==Deux.g){}
+		else{if(Un.d==Deux.g)noir=noir+1;};
+		if(Un.d==Deux.h) blanc=blanc+1;
+		System.out.println(blanc+" "+"pion blanc"+"  "+noir+" "
+				+" "+"pion noir");	
+	 return false;
 	}
 	// TODO Auto-generated method stub
 	
 }
+
 }

@@ -19,6 +19,7 @@ public class MastermindGame
 	private final Player Player;
 	
 	private int nbtour;
+	private Combinaison combi;
 
 	/**
 	 * Create a new game, that can be played (player is ready and ia combinaison is set)
@@ -28,7 +29,7 @@ public class MastermindGame
 		/*
 		 * CREATION D'UN OBJET COMBINAISON
 		 */
-		this.iaCombinaison = new Combinaison(Namecolor.RED,Namecolor.RED,Namecolor.YELLOW,Namecolor.GREEN);
+		this.iaCombinaison = new Combinaison(Namecolor.BLUE,Namecolor.RED,Namecolor.YELLOW,Namecolor.GREEN);
 		/*
 		 * creation d'un objet player
 		 */
@@ -54,9 +55,9 @@ public class MastermindGame
 		 */
 		//this.Jcombinaison = new Combinaison(Namecolor.BLUE, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
 	while(!this.gameover()){
-		  Combinaison combi = this.Player.getcombi();
-		  System.out.println(combi);
-		  boolean comp = docomp(combi,this.iaCombinaison);
+		  this.combi = this.Player.getcombi();
+		  System.out.println(this.combi);
+		  boolean comp = Combinaison.docomp(this.combi,this.iaCombinaison);
 		  System.out.println(comp);
 		  this.nbtour=this.nbtour+1;
 		                  }	
@@ -67,19 +68,22 @@ public class MastermindGame
  * @return boolean 
  */
 	private boolean gameover(){
-		if (docomp(this.Player.Jcombinaison,this.iaCombinaison)){
+		if (Combinaison.docomp(this.Player.Jcombinaison,this.iaCombinaison)){
 			System.out.println("bonne Combinaison");
-			return false;
+			return true;
 											}
 		else{ if (this.nbtour>=10){
 			System.out.println("nombre de tour max atteint");
-			return false;
+			return true;
 		     					  }
 		else{
-		    return true;
+		    return false ;
 			}
 		   }
     }
+	
+	
+	
 }
 	
 
