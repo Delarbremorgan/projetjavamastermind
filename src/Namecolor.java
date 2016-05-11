@@ -6,6 +6,10 @@
 public enum Namecolor
 {
 	/**
+	 * name of color 
+	 */
+	WHITE,
+	/**
 	 * name of the color
 	 */
 	BLUE,
@@ -33,4 +37,7 @@ public enum Namecolor
 	 *name of the color
 	 */
     PURPLE;
-	}
+	/**
+	 * name of the color
+	 */
+}

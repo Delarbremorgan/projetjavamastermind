@@ -28,7 +28,7 @@ public Player(){
  */
 public Player(boolean state){
 	this.state=state;
-	this.Jcombinaison = new Combinaison(Namecolor.RED, Namecolor.RED, Namecolor.YELLOW, Namecolor.GREEN);
+	this.Jcombinaison = new Combinaison(Namecolor.WHITE, Namecolor.WHITE, Namecolor.WHITE, Namecolor.WHITE);
 }
 	/***
 	 * change player state to ready
