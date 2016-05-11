@@ -14,7 +14,7 @@ public class Player
 	/**
 	 * combinaison player
 	 */
-	public Combinaison Jcombinaison;
+	public Jcombinaison Jcombinaison;
 	/**
 	 * create player with default_state
 	 */
@@ -27,8 +27,7 @@ public Player(){
  * @param state
  */
 public Player(boolean state){
-	this.state=state;
-	this.Jcombinaison = new Combinaison(Namecolor.WHITE, Namecolor.WHITE, Namecolor.WHITE, Namecolor.WHITE);
+this.state=state;
 }
 	/***
 	 * change player state to ready
@@ -48,10 +47,9 @@ public boolean getstate(){
  * getcombi methode
  * @return combinaison player
  */
-public Combinaison getcombi()
+public Jcombinaison getcombi()
 {  
 	this.Jcombinaison = new Jcombinaison();
-	System.out.println(this.Jcombinaison.a+" "+this.Jcombinaison.b+" "+this.Jcombinaison.c+" "+this.Jcombinaison.d);
 	return this.Jcombinaison;
 	// TODO Auto-generated method stub
 	

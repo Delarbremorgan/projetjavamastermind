@@ -55,43 +55,17 @@ public class MastermindGame
 		// Namecolor.YELLOW, Namecolor.GREEN);
 		while (!isGameOver)
 		{
-			Combinaison combi = this.Player.getcombi();
+			Jcombinaison combi = this.Player.getcombi();
 			System.out.println(combi);
-			
-			/* boolean comp = */iaCombinaison.docomp(combi);
-			// System.out.println(comp);
+			NbPion pion = this.iaCombinaison.compareTo(combi);
+			System.out.println("Nombre de pion blanc ="+" "+pion.getPionblanc()+" "+"Nombre de pion noir ="+" "+pion.getPionnoir());
 			this.nbtour = this.nbtour + 1;
+			System.out.println("vous ete au tour n°"+nbtour+"/12");
+			if (pion.getPionblanc()==4) isGameOver=true ;
+			if (this.nbtour == 12) isGameOver=true  ;
+			if (pion.getPionblanc()==4) System.out.println("Victoire"+" "+"la combinaison a trouver etait :"+this.iaCombinaison);
+			if (this.nbtour == 12) System.out.println("défaite"+" "+"la combinaison a trouver etait :"+this.iaCombinaison)  ;
 		}
 	}
-
-	/**
-	 * Method gameover
-	 * 
-	 * @return boolean
-	 */
-	/*private boolean gameover()
-	{
-		if (Combinaison.docomp(this.Player.Jcombinaison, this.iaCombinaison))
-		{
-			System.out.println("bonne Combinaison");
-			System.out.println(this.iaCombinaison.e + " " + this.iaCombinaison.f + " " + this.iaCombinaison.g + " "
-					+ this.iaCombinaison.h);
-			return true;
-		}
-		else
-		{
-			if (this.nbtour >= 10)
-			{
-				System.out.println("nombre de tour max atteint");
-				System.out.println(this.iaCombinaison.e + " " + this.iaCombinaison.f + " " + this.iaCombinaison.g + " "
-						+ this.iaCombinaison.h);
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
-	}*/
 
 }

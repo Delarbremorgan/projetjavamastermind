@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * class Combinaison
  * 
@@ -6,17 +8,18 @@
  */
 public class Combinaison
 {
-	private Namecolor[] colors;
+    private Namecolor[] colors ;
 /**
  * combinaison object
  */
 	public Combinaison()
-	{
-		this.colors =new Namecolor[4]; // allocate array
+	{ 
+		colors =new Namecolor[4]; // allocate array
 		
 		for (int index = 0; index <= 4; index++)
-				{
-					this.colors[index] = Colors.getrandomcolor();
+				{ 
+			     
+			     colors[index] = Colors.getrandomcolor();
 				}
 	}
 
@@ -29,27 +32,35 @@ public class Combinaison
 
 	 * @return 
 	 */
-	public NbPion compareTo(Combinaison other)
+	public NbPion compareTo(Jcombinaison other)
 	{   
-		NbPion comp = new NbPion();
+		int blanc=0;
+		int noir=0;
+		
 		for(int i =0 ;i <= 4;i++)
 		{
 			 for (int j=0; j <=4; j++)
 		        {
-		            if (this.colors[i] == other.colors[j] && i==j) comp.addpionblanc();
+		            if (this.colors[i] == other.Jcolors[j] && i==j) blanc++;
 		            
-		            if (this.colors[i] == other.colors[j]) comp.addpionnoir();
+		            if (this.colors[i] == other.Jcolors[j]) noir++;
 		
 		        }
 		}
+		NbPion comp = new NbPion(blanc,noir);
 		// TODO Auto-generated method stub
 		return comp;
 
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Combinaison [colors=" + Arrays.toString(colors) + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
 		
-		public String toString()
-		{
-			return "todo";
-		}
+		
 
 }

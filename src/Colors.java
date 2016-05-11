@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * class colors
  */
@@ -15,11 +17,12 @@ public class Colors
 	/**
 	*color
 	*/
-	public static int color; 
+	public static  int color; 
 	/**
 	 * name of color
 	 */
 	public static Namecolor name;
+	private Namecolor Cname;
 
 	/**
 	 * generate color random
@@ -47,7 +50,24 @@ public class Colors
 				name=Namecolor.PURPLE; };
 				return name;
 		}
-	}
+	
+static Scanner sa = new Scanner(System.in);
+ public Namecolor getselectcolor()
+ {
+	 int sta = sa.nextInt();
+	 if (sta==1) name=Namecolor.BLUE;
+	 if (sta==2) name=Namecolor.RED;
+	 if (sta==3) name=Namecolor.YELLOW;
+	 if (sta==4) name=Namecolor.GREEN;
+	 if (sta==5) name=Namecolor.PINK;
+	 if (sta==6) name=Namecolor.ORANGE;
+	 if (sta==7) name=Namecolor.PURPLE;
+	return name;
+ }
+public Namecolor getCname() {
+	return Cname;
+}
 
-
+ 
+}
 
