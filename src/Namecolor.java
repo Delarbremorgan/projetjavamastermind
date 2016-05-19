@@ -6,10 +6,6 @@
 public enum Namecolor
 {
 	/**
-	 * name of color 
-	 */
-	WHITE,
-	/**
 	 * name of the color
 	 */
 	BLUE,

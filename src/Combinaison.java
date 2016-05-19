@@ -16,7 +16,7 @@ public class Combinaison
 	{ 
 		colors =new Namecolor[4]; // allocate array
 		
-		for (int index = 0; index <= 4; index++)
+		for (int index = 0; index <4; index++)
 				{ 
 			     
 			     colors[index] = Colors.getrandomcolor();
@@ -37,13 +37,19 @@ public class Combinaison
 		int blanc=0;
 		int noir=0;
 		
-		for(int i =0 ;i <= 4;i++)
+		for(int i =0 ;i < 4;i++)
 		{
-			 for (int j=0; j <=4; j++)
+			 for (int j=0; j <4; j++)
 		        {
-		            if (this.colors[i] == other.Jcolors[j] && i==j) blanc++;
+		            if (this.colors[i] == other.Jcolors[j] && i==j) {
+		            	blanc++;
+		            break;	
+		            };
 		            
-		            if (this.colors[i] == other.Jcolors[j]) noir++;
+		            if (this.colors[i] == other.Jcolors[j]) 
+		            	{noir++;
+		            	break;
+		            	}
 		
 		        }
 		}
@@ -52,7 +58,7 @@ public class Combinaison
 		return comp;
 
 	}
-
+ 
 
 
 	@Override

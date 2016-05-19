@@ -56,7 +56,6 @@ public class MastermindGame
 		while (!isGameOver)
 		{
 			Jcombinaison combi = this.Player.getcombi();
-			System.out.println(combi);
 			NbPion pion = this.iaCombinaison.compareTo(combi);
 			System.out.println("Nombre de pion blanc ="+" "+pion.getPionblanc()+" "+"Nombre de pion noir ="+" "+pion.getPionnoir());
 			this.nbtour = this.nbtour + 1;

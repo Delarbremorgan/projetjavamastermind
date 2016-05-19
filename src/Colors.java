@@ -22,7 +22,6 @@ public class Colors
 	 * name of color
 	 */
 	public static Namecolor name;
-	private Namecolor Cname;
 
 	/**
 	 * generate color random
@@ -51,23 +50,20 @@ public class Colors
 				return name;
 		}
 	
-static Scanner sa = new Scanner(System.in);
- public Namecolor getselectcolor()
- {
+Scanner sa = new Scanner(System.in);
+ public static Namecolor getselectcolor()
+ { 
+	 Scanner sa = new Scanner(System.in);
 	 int sta = sa.nextInt();
-	 if (sta==1) name=Namecolor.BLUE;
-	 if (sta==2) name=Namecolor.RED;
-	 if (sta==3) name=Namecolor.YELLOW;
+	 if (sta==0) name=Namecolor.BLUE;
+	 if (sta==1) name=Namecolor.RED;
+	 if (sta==2) name=Namecolor.YELLOW;
+	 if (sta==3) name=Namecolor.PINK;
 	 if (sta==4) name=Namecolor.GREEN;
-	 if (sta==5) name=Namecolor.PINK;
-	 if (sta==6) name=Namecolor.ORANGE;
-	 if (sta==7) name=Namecolor.PURPLE;
+	 if (sta==5) name=Namecolor.ORANGE;
+	 if (sta==6) name=Namecolor.PURPLE;
+	 System.out.println(name);
 	return name;
  }
-public Namecolor getCname() {
-	return Cname;
-}
-
- 
 }
 
