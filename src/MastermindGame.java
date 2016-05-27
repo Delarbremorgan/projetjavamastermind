@@ -55,7 +55,7 @@ public class MastermindGame
 		// Namecolor.YELLOW, Namecolor.GREEN);
 		while (!isGameOver)
 		{
-			 System.out.println(this.iaCombinaison);
+			 /* for test method compareto System.out.println(this.iaCombinaison);*/
 			Jcombinaison combi = this.Player.getcombi();
 			NbPion pion = this.iaCombinaison.compareTo(combi);
 			System.out.println("Nombre de pion blanc ="+" "+pion.getPionblanc()+" "+ "&"+" "+"Nombre de pion noir ="+" "+pion.getPionnoir());
