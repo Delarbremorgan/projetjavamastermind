@@ -34,32 +34,32 @@ public class Combinaison
 	{   
 		int blanc=0;
 		int noir=0;
-		boolean[] bp;
-		bp=new boolean[4];
+		boolean[] bp = {false, false, false, false};
+
 		for(int i =0 ;i < this.colors.length;i++)
 		{
 		    if (this.colors[i] == other.Jcolors[i]){
 		        blanc++;
 		        bp[i]=true;
-		            								}	
-		    else{ bp[i] = false;}
+		            									
+		    }
 		}
-		boolean[] np;
-		np = new boolean[4];
+		boolean[] np =  {false, false, false, false};
+		System.arraycopy(bp, 0, np, 0, bp.length);
+		
 		for(int i =0 ;i < this.colors.length;i++){
 			if(bp[i]) continue;
-			for(int j=0;j < 4;j++){
+			for(int j=0;j < this.colors.length;j++){
 				if(np[j]) continue;
 				 if (this.colors[i] == other.Jcolors[j]){
 					 noir++;
 					 np[j]=true;
 				 }
-				 else{np[j] = false;}
 			}
 			
 		}
 		NbPion comp = new NbPion(blanc,noir);
-		// TODO Auto-generated method stub
+		// done Auto-generated method stub
 		return comp;
 
 	}
