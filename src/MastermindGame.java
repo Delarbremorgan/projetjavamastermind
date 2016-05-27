@@ -57,13 +57,13 @@ public class MastermindGame
 		{
 			Jcombinaison combi = this.Player.getcombi();
 			NbPion pion = this.iaCombinaison.compareTo(combi);
-			System.out.println("Nombre de pion blanc ="+" "+pion.getPionblanc()+" "+"Nombre de pion noir ="+" "+pion.getPionnoir());
+			System.out.println("Nombre de pion blanc ="+" "+pion.getPionblanc()+" "+ "&"+" "+"Nombre de pion noir ="+" "+pion.getPionnoir());
 			this.nbtour = this.nbtour + 1;
-			System.out.println("vous ete au tour n°"+nbtour+"/12");
+			System.out.println("Vous Ãªtes au tour nÂ°"+this.nbtour+"/12");
 			if (pion.getPionblanc()==4) isGameOver=true ;
 			if (this.nbtour == 12) isGameOver=true  ;
-			if (pion.getPionblanc()==4) System.out.println("Victoire"+" "+"la combinaison a trouver etait :"+this.iaCombinaison);
-			if (this.nbtour == 12) System.out.println("défaite"+" "+"la combinaison a trouver etait :"+this.iaCombinaison)  ;
+			if (pion.getPionblanc()==4) System.out.println("Victoire"+" "+"la combinaison a trouver etait :"+ this.iaCombinaison);
+			if (this.nbtour == 12) System.out.println("dÃ©faite"+" "+"la combinaison a trouver etait :"+this.iaCombinaison)  ;
 		}
 	}
 

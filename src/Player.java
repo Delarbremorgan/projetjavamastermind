@@ -51,7 +51,7 @@ public Jcombinaison getcombi()
 {  
 	this.Jcombinaison = new Jcombinaison();
 	return this.Jcombinaison;
-	// TODO Auto-generated method stub
+	// done Auto-generated method stub
 	
 }
 

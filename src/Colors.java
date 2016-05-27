@@ -51,6 +51,10 @@ public class Colors
 		}
 	
 Scanner sa = new Scanner(System.in);
+/**
+ * 
+ * @return name
+ */
  public static Namecolor getselectcolor()
  { 
 	 Scanner sa = new Scanner(System.in);
